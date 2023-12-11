@@ -1,0 +1,504 @@
+/* Reset CSS */
+
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+h2 {
+  font-size: 24px;
+  color: #000000;
+  font-weight: 900;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* \Reset CSS */
+strong {
+  font-weight: 600;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  padding: 0 45px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.button {
+  font-size: 220%;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 auto;
+  vertical-align: middle;
+  padding: 14px;
+  box-sizing: border-box;
+  border: 0 none;
+  cursor: pointer;
+  outline: 0;
+  min-width: 220px;
+  text-align: center;
+  overflow: hidden;
+  font-weight: 400;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  border-radius: 50px;
+  position: relative;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  z-index: 3;
+  background-color: #000000;
+  color: #ffffff;
+  border-color: #000000;
+}
+
+.button:hover {
+  background-color: #333333;
+  border-color: transparent;
+}
+
+/* /Initial */
+
+/* Main CSS */
+
+.snow {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+meta.foundation-data-attribute-namespace {
+  font-family: false;
+}
+
+body {
+  background: url("../images/Winter_2018_ES_Mini_Game_PC_BG.jpg") center top no-repeat #ffffff;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  font-family: sans-serif;
+  color: #ffffff;
+  font-weight: normal;
+  font-size: 10px;
+  z-index: 1;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  padding-top: 65px;
+}
+
+img {
+  max-width: 100%;
+}
+
+#cursor {
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  position: absolute;
+  left: -80px;
+  top: -80px;
+  width: 190px;
+  height: 221px;
+  z-index: 99999;
+  background: url("../images/Winter_2018_ES_Mini_Game_Hover_Glove.png") center center no-repeat;
+  pointer-events: none;
+  transform: scale(1);
+  -moz-transform: scale(1);
+  -webkit-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+
+  -webkit-transition: opacity 100ms linear, transform 200ms linear;
+  -moz-transition: opacity 100ms linear, transform 200ms linear;
+  -ms-transition: opacity 100ms linear, transform 200ms linear;
+  -o-transition: opacity 100ms linear, transform 200ms linear;
+  transition: opacity 100ms linear, transform 200ms linear;
+}
+
+.no-selection {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+}
+
+.frost {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  z-index: 2;
+}
+
+.logo {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  z-index: 2;
+}
+
+.scratch {
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+  cursor: none;
+  min-height: 258px;
+}
+
+.scratch-image {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.prize-title {
+  padding-top: 320px;
+  position: relative;
+}
+
+.content {
+  color: #000000;
+  padding-top: 50px;
+}
+
+#bridge {
+  display: none;
+  background-size: 100% !important;
+  -webkit-background-size: 100% !important;
+  -moz-background-size: 100% !important;
+  -o-background-size: 100% !important;
+  width: 100%;
+  max-width: 612px;
+  /*cursor: url("../scratch_card_cursor.png") 20 20, auto;*/
+  margin: 0 auto;
+}
+
+.claim-wrap {
+  padding-top: 130px;
+  display: none;
+}
+
+.claim {
+  position: relative;
+  max-width: 727px;
+  margin: 0 auto;
+}
+
+.claim-content {
+  position: absolute;
+  top: 23%;
+  left: 50%;
+  transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+
+  padding: 10px 10px 30px 0;
+  box-sizing: border-box;
+  color: #2196f3;
+  font-size: 20px;
+  width: 65%;
+  height: 50%;
+  overflow-y: auto;
+}
+
+.claim-content strong {
+  display: block;
+  font-size: 130%;
+}
+
+.claim-content a {
+  color: #2196f3;
+}
+.claim-content p {
+  display: block;
+  font-size: 70%;
+}
+
+.snowflake {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  z-index: 999;
+}
+
+.snowflake img {
+  -webkit-animation: rotate 4s linear 0s infinite normal;
+  animation: rotate 4s linear 0s infinite normal;
+}
+
+@-webkit-keyframes rotate {
+  100% {
+    -webkit-transform: rotateX(360deg) rotateZ(360deg);
+    transform: rotateX(360deg) rotateZ(360deg);
+  }
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotateX(360deg) rotateZ(360deg);
+  }
+}
+
+@media only screen and (max-width: 1920px) {
+  body {
+    -webkit-background-size: auto;
+    -moz-background-size: auto;
+    -o-background-size: auto;
+    background-size: auto;
+  }
+}
+
+.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 500px) {
+  .desktop-only {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  body {
+    background: url("../images/Winter_2018_ES_Mini_Game_Mobile_BG.jpg") center top no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-top: 18%;
+  }
+
+  .logo img {
+    max-width: 68%;
+  }
+
+  .scratch {
+    width: 70%;
+  }
+
+  .prize-title img {
+    max-width: 72%;
+    margin: 0 auto;
+  }
+
+  .prize-title {
+    padding-top: 40%;
+  }
+
+  .content {
+    padding-top: 40%;
+  }
+
+  #cursor {
+    width: 90px;
+    height: 221px;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+  }
+
+  .claim-wrap {
+    padding-top: 12%;
+  }
+
+  .claim-content {
+    font-size: 13px;
+    padding: 5px 5px 5px 0;
+  }
+
+  .snowflake img {
+    width: 50%;
+  }
+
+  .scratch-image {
+    top: 50%;
+  }
+}
+
+/*
+#cursor, .scratch, .prize-title, .content {
+	display: none!important;
+}
+.claim-wrap {
+	display: block;
+}*/
